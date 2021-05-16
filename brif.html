@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Бриф</title>
+    <link rel="icon" type="image/x-icon" href="favicon-2.ico">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper-brif">
+        <header>
+            <div class="container">
+                <div class="flex-container vertical between">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <a href="#" class="brif">Заполнить бриф</a>
+                    <div class="contact">
+                        <a href="#" class="number">+7 (495) 481-33-50</a>
+                        <a href="#" class="mail">zakaz@mmp-group.ru</a>
+                    </div>
+                    <a href="#discuss-poject" class="btn btn-small btn-transparent c-light-green">Обсудить Ваш проект</a>
+                    <div class="lang">
+                        <a href="#" class="ru">рус</a>
+                        <ul class="lang-list">
+                            <li><a href="#" class="ru">рус</a></li>
+                            <li><a href="#" class="en">eng</a></li>
+                            <li><a href="#" class="de">de</a></li>
+                            <li><a href="#" class="fr">fra</a></li>
+                            <li><a href="#" class="it">it</a></li>
+                            <li><a href="#" class="es">es</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="line d-n-768">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </div>
+                <nav class="navigation flex-container between c-light-green" id="menu">
+                    <div class="mobile-menu-top">
+                        <div class="lang">
+                            <a href="#" class="ru">рус</a>
+                            <ul class="lang-list">
+                                <li><a href="#" class="ru">рус</a></li>
+                                <li><a href="#" class="en">eng</a></li>
+                                <li><a href="#" class="de">de</a></li>
+                                <li><a href="#" class="fr">fra</a></li>
+                                <li><a href="#" class="it">it</a></li>
+                                <li><a href="#" class="es">es</a></li>
+                            </ul>
+                        </div>
+                        <div class="contact">
+                            <a href="#" class="number">+7 (495) 481-33-50</a>
+                            <a href="#" class="mail">zakaz@mmp-group.ru</a>
+                        </div>
+                        <a href="#discuss-poject" class="btn btn-small btn-transparent c-light-green">Обсудить Ваш проект</a>
+                        <a href="#" class="brif">Заполнить бриф</a>
+                        <a href="#" class="close-menu-btn">
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <a href="#" class="sites">Сайты</a>
+                    <a href="#" class="about-us">О нас</a>
+                    <a href="#" class="advertising">Реклама</a>
+                    <a href="#" class="support">Техподдержка</a>
+                    <a href="#" class="contacts">Контакты</a>
+                    <a href="#" class="full">Проекты под ключ</a>
+                </nav>
+            </div>
+            <div class="three-lines">
+                <span class="left"></span>
+                <span class="right"></span>
+            </div>
+        </header>
+        <main>
+            <section class="brif-page circuit">
+                <div class="container">
+                    <h2 class="c-light-green">Заполнить бриф</h2>
+                    <div class="neuron-line"></div>
+                    <form action="" class="brif-form">
+                        <div class="brif-section">
+                            <div class="input w-50 pull-left">
+                                <input type="text" name="name-company" id="name-company" placeholder="Название компании:">
+                            </div>
+                            <div class="select w-50 pull-right">
+                                <select name="type-site" id="type-site" data-placeholder="Тип требующегося сайта:">
+                                    <option></option>
+                                    <option value="1">Промо-сайт (Продвижение товаров и услуг)</option>
+                                    <option value="2">Сайт-визитка (Общая информация о компании и ее координаты)</option>
+                                    <option value="3">Корпоративный сайт (Подробная информация о компании. Каталог товаров и/или услуг, Без возможности оформления заказов на сайте.)</option>
+                                    <option value="4">Интернет-магазин (Продажа товаров и/или услуг с заказом и оплатой товаров.)</option>
+                                    <option value="5">Информационный портал (Предоставление посетителям большого объема различной информации.)</option>
+                                    <option value="6">Ваш вариант (опишите)</option>
+                                </select>
+                            </div>
+                            <div class="textarea">
+                                <textarea name="desc-targets-tasks" id="desc-targets-tasks" placeholder="Описание целей и задач сайта."></textarea>
+                            </div>
+                        </div>
+                        <div class="three-lines">
+                            <div class="small-line top"></div>
+                            <span class="left"></span>
+                            <span class="right"></span>
+                            <div class="small-line bottom"></div>
+                        </div>
+                        <div class="brif-section">
+                            <h3>Контактные данные:</h3>
+                            <div class="input w-50 pull-left">
+                                <input type="text" min="2" name="brif-name" id="brif-name" placeholder="Ваше имя:">
+                            </div>
+                            <div class="input w-50 pull-right">
+                                <input type="number" min="6" name="brif-phone" id="brif-phone" placeholder="Телефон:">
+                            </div>
+                            <div class="input w-50 pull-left">
+                                <input type="email" min="2" name="brif-mail" id="brif-mail" placeholder="E-mail">
+                            </div>
+                            <div class="input w-50 pull-right">
+                                <input type="text" min="2" name="skype" id="skype" placeholder="Skype/Telegram:">
+                            </div>
+                        </div>
+                        <div class="three-lines">
+                            <div class="small-line top"></div>
+                            <span class="left"></span>
+                            <span class="right"></span>
+                            <div class="small-line bottom"></div>
+                        </div>
+                        <div class="brif-section class-for-perfect">
+                            <h3>Предпочтение по работе по договору (Выберите предпочтительный вариант или оба):</h3>
+                            <div class="checkbox-faces-wrap">
+                                <div class="checkbox">
+                                    <div class="wrapcheckbox">
+                                        <input type="checkbox" name="entity" id="entity">
+                                        <label for="entity">С юридическим лицом</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <div class="wrapcheckbox">
+                                        <input type="checkbox" name="individual" id="individual">
+                                        <label for="individual">С физичиским лицом</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three-lines">
+                            <div class="small-line top"></div>
+                            <span class="left"></span>
+                            <span class="right"></span>
+                            <div class="small-line bottom"></div>
+                        </div>
+                        <div class="brif-section brif-section-second">
+                            <h3>Прикрепить техническое задание (при наличии)</h3>
+                            <p>Формат файла: pdf, jpg, doc, docs, xlsx. Допустимый объем не более 20 МБ</p>
+                            <input type="file" name="brif-tech-task" id="brif-tech-task">
+                            <label for="brif-tech-task">Загрузить ТЗ или свой бриф <span class="name-file"></span></label>
+                            <span class="file-not-selected">Файл не выбран</span>
+                        </div>
+                        <div class="three-lines">
+                            <div class="small-line top"></div>
+                            <span class="left"></span>
+                            <span class="right"></span>
+                            <div class="small-line bottom"></div>
+                        </div>
+                        <div class="brif-section class-for-perfect2">
+                            <div class="input">
+                                <input type="text" name="sphere-company" id="sphere-company" placeholder="Сфера деятельности компании:">
+                            </div>
+                            <div class="textarea">
+                                <textarea name="advantage" id="advantage" placeholder="Описание основных преимуществ компании:"></textarea>
+                            </div>
+                            <div class="textarea">
+                                <textarea name="products" id="products" placeholder="Описание основных товаров/услуг:"></textarea>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="type-client" id="type-client" placeholder="Кто Ваш типовой клиент / целевая аудитория:">
+                            </div>
+                            <div class="input">
+                                <input type="text" name="address-current-site" id="address-current-site" placeholder="Адрес текущего сайта:">
+                            </div>
+                        </div>
+                        <div class="three-lines">
+                            <div class="small-line top"></div>
+                            <span class="left"></span>
+                            <span class="right"></span>
+                            <div class="small-line bottom"></div>
+                        </div>
+                        <div class="brif-section class-for-perfect3">
+                            <h3>Функционал сайта</h3>
+                            <div class="textarea">
+                                <textarea name="sections-site" id="sections-site" placeholder="Планируемые  разделы сайта (перечислить):"></textarea>
+                            </div>
+                            <div class="textarea">
+                                <textarea name="functional-site" id="functional-site" placeholder="Особенности функционала сайта (опишите Ваши пожелания и нестандартные решения):"></textarea>
+                            </div>
+                            <div class="textarea">
+                                <textarea name="main-page-site" id="main-page-site" placeholder="Структура главной страницы (опишите подробно все разделы меню, рубрики, баннеры, контакты, формы поиска и другие возможные элементы сайта):"></textarea>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="language-site" id="language-site" placeholder="Языковые версии (укажите язык сайта, необходимы дополнительные языки и перевод сайта):">
+                            </div>
+                            <div class="input">
+                                <input type="text" name="resize-site" id="resize-site" placeholder="Масштабируемость (выбор либо растягивающийся в зависимости от размеров окна браузера, либо статичный):">
+                            </div>
+                            <div class="select">
+                                <select name="adaptive-design" id="adaptive-design" data-placeholder="Необходимо ли разрабатывать дизайн мобильной версии сайта?">
+                                    <option></option>
+                                    <option value="">Да</option>
+                                    <option value="">Нет</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="three-lines">
+                            <div class="small-line top"></div>
+                            <span class="left"></span>
+                            <span class="right"></span>
+                            <div class="small-line bottom"></div>
+                        </div>
+                        <div class="brif-section class-for-perfect4">
+                            <h3>Дизайн будущего сайта</h3>
+                            <div class="select w-50 pull-left">
+                                <select name="has-logo" id="has-logo" data-placeholder="Наличие у компании логотипа:">
+                                    <option></option>
+                                    <option value="">Да</option>
+                                    <option value="">Нет</option>
+                                </select>
+                            </div>
+                            <div class="select w-50 pull-right">
+                                <select name="has-style" id="has-style" data-placeholder="Наличие фирменного стиля:">
+                                    <option></option>
+                                    <option value="">Да</option>
+                                    <option value="">Нет</option>
+                                </select>
+                            </div>
+                            <div class="wrap-logo-style">
+                                <input type="file" name="logo-style" id="logo-style">
+                                <label for="logo-style">Опция загрузки фирменного стиля или логотипа <span class="name-file"></span></label>
+                                <span class="file-not-selected">Файл не выбран</span>
+                            </div>
+                            <div class="textarea">
+                                <textarea name="what-like" id="what-like" placeholder="Примеры проектов которые нравятся, с указанием что нравится:"></textarea>
+                            </div>
+                            <div class="textarea">
+                                <textarea name="what-not-like" id="what-not-like" placeholder="Примеры проектов которые НЕ нравятся, с указанием что НЕ нравится:"></textarea>
+                            </div>
+                            <div class="textarea">
+                                <textarea name="feature-main-page" id="feature-main-page" placeholder="Описать впечатление, которая должна производить главная страница:"></textarea>
+                            </div>
+                        </div>
+                        <div class="three-lines">
+                            <div class="small-line top"></div>
+                            <span class="left"></span>
+                            <span class="right"></span>
+                            <div class="small-line bottom"></div>
+                        </div>
+                        <div class="brif-section class-for-perfect5">
+                            <h3>Цветовое решение</h3>
+                            <div class="wrap-checkbox-top">
+                                <div class="checkbox">
+                                    <div class="wrapcheckbox">
+                                        <input type="checkbox" name="firm-style-color" id="firm-style-color" checked>
+                                        <label for="firm-style-color">Только цвета фирменного стиля и оттенки (если есть)</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <div class="wrapcheckbox">
+                                        <input type="checkbox" name="any-style-color" id="any-style-color"> 
+                                        <label for="any-style-color">Цвета фирменного стиля и любые, сочетаемые с ними</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <div class="wrapcheckbox">
+                                        <input type="checkbox" name="soft-color" id="soft-color">
+                                        <label for="soft-color">Мягкие пастельные цвета</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <div class="wrapcheckbox">
+                                        <input type="checkbox" name="designe-color" id="designe-color">
+                                        <label for="designe-color">На усмотрение дизайнера</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="your-color" id="your-color" placeholder="Предложить свое:">
+                            </div>
+                        </div>
+                        <div class="three-lines">
+                            <div class="small-line top"></div>
+                            <span class="left"></span>
+                            <span class="right"></span>
+                            <div class="small-line bottom"></div>
+                        </div>
+                        <div class="brif-section class-for-perfect6">
+                            <div class="textarea">
+                                <textarea name="your-ideas" id="your-ideas" placeholder="Укажите идеи, которые Вы хотите воплотить в дизайне:"></textarea>
+                            </div>
+                        </div>
+                        <div class="three-lines">
+                            <div class="small-line top"></div>
+                            <span class="left"></span>
+                            <span class="right"></span>
+                            <div class="small-line bottom"></div>
+                        </div>
+                        <div class="brif-section class-for-perfect7">
+                            <h3>Первичное наполнение сайта материалами</h3>
+                            <div class="wrap-radio-flex">
+                                <div class="radio radio-flex">
+                                    <div class="radio-wrap">
+                                        <input type="radio" name="company-content" id="yourself-content" checked>
+                                        <label for="yourself-content">Самостоятельная</label>
+                                    </div>
+                                </div>
+                                <div class="radio radio-flex">
+                                    <div class="radio-wrap">
+                                        <input type="radio" name="company-content" id="company-content">
+                                        <label for="company-content">Силами исполнителя</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="date-start" id="date-start" placeholder="Желаемые сроки запуски сайта:">
+                            </div>    
+                        </div>
+                        <div class="three-lines">
+                            <div class="small-line top"></div>
+                            <span class="left"></span>
+                            <span class="right"></span>
+                            <div class="small-line bottom"></div>
+                        </div>
+                        <div class="wrap-last-text">
+                            <p>Спасибо, что обратились к нам! Мы обработаем Ваш бриф и свяжемся в ближаейшее время с конкретным предложением!</p>
+                        </div>
+                        <div class="btn-wrap">
+                            <button type="submit" class="btn btn-green btn-big c-white">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-links-wrap">
+                    <ul class="promotion-sites">
+                        <li><a href="#">Раскрутка сайтов</a></li>
+                        <li><a href="#">В ТОП 10 Яндекса</a></li>
+                        <li><a href="#">Интернет - магазинов</a></li>
+                        <li><a href="#">По позициям</a></li>
+                        <li><a href="#">По кликам</a></li>
+                    </ul>
+                    <ul class="developing-sites">
+                        <li><a href="#">Разработка сайтов</a></li>
+                        <li><a href="#">Интернет-магазины</a></li>
+                        <li><a href="#">Корпоративные порталы</a></li>
+                        <li><a href="#">Сайты-визитки</a></li>
+                        <li><a href="#">Редизайн и юзабилити</a></li>
+                        <li><a href="#">Лендинг пейдж</a></li>
+                        <li><a href="#">Индивидуальные проекты</a></li>
+                    </ul>
+                    <ul class="support-sites">
+                        <li><a href="#">Поддержка сайта</a></li>
+                        <li><a href="#">Техническая</a></li>
+                        <li><a href="#">Информационная</a></li>
+                    </ul>
+                    <ul class="developing-style">
+                        <li><a href="#">Разработка фирм. стиля</a></li>
+                        <li><a href="#">Логотип</a></li>
+                        <li><a href="#">Брендбук</a></li>
+                    </ul>
+                    <ul class="adversting-to-internet">
+                        <li><a href="#">Реклама в интернете</a></li>
+                        <li><a href="#">SEO аудит сайта</a></li>
+                        <li><a href="#">Контекстная реклама</a></li>
+                        <li><a href="#">SMM</a></li>
+                    </ul>
+                    <ul class="portfolio">
+                        <li><a href="#">Портфолио</a></li>
+                    </ul>
+                </div>
+                <div class="flex-container between vertical">
+                    <div class="logo">
+                        <img src="img/footer-logo.png" alt="">
+                        <span>Mind motion of progress</span>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="fb"></a>
+                        <a href="#" class="insta"></a>
+                        <a href="#" class="twitter"></a>
+                        <a href="#" class="youtube"></a>
+                        <a href="#" class="vk"></a>
+                    </div>
+                    <div class="address c-white">
+                        <span class="phone">+7 (495) 763-71-73</span>
+                        <span>zakaz@mmp-group.ru</span>
+                        <p>107113, г.Москва,<br> ул. 2-я Рыбинская, д.13, оф.38</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- modal "i want site too" -->
+    <div class="overlay">
+        <div class="wrap-modal"></div>
+        <div class="modal discount" id="i-want-site">
+            <a href="#" class="close-modal">
+                <span></span>
+                <span></span>
+            </a>
+            <div class="modal-content">
+                <h2 class="c-light-green">Заявка с сайта на скидку:</h2>
+                <h2 class="c-grey">"Хочу такой же сайт"</h2>
+                <div class="neuron-line"></div>
+                <p>Контактные данные:</p>
+                <span>+ 7 (495) 567-09-00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="wrap-modal"></div>
+        <div class="modal get-order" id="thanks-order">
+            <a href="#" class="close-modal">
+                <span></span>
+                <span></span>
+            </a>
+            <div class="modal-content">
+                <h2 class="c-light-green">Спасибо! мы рады получить</h2>
+                <h2 class="c-light-green">Вашу заявку</h2>
+                <div class="neuron-line"></div>
+                <p>В ближайшее время наш менеджер свяжется с Вами,
+                а пока можете посмотреть наши аккаунты в соцсетях</p>
+                <ul class="social">
+                    <li><a href="#" class="fb"></a></li>
+                    <li><a href="#" class="insta"></a></li>
+                    <li><a href="#" class="twitter"></a></li>
+                    <li><a href="#" class="youtube"></a></li>
+                    <li><a href="#" class="vk"></a></li>
+                </ul>
+                <p>Благодарим за обращение в нашу компанию!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="wrap-modal"></div>
+        <div class="modal bonus">
+            <a href="#" class="close-modal">
+                <span></span>
+                <span></span>
+            </a>
+            <div class="modal-content">
+                <h2 class="c-light-green">Бонус</h2>
+                <div class="neuron-line"></div>
+                <p class="warning"><span>Стойте!</span>У нас есть выгодное предложение для вас!</p>
+                <p>Отправьте заявку на бесплатную консультацию и получите скидку на наши услуги 30%</p>
+                <img src="img/prize.png" alt="">
+                <form>
+                    <input type="text" name="bonus-phone" placeholder="Ваш телефон:">
+                    <button type="submit" class="btn btn-big btn-green c-white">Жду звонка</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="wrap-modal"></div>
+        <div class="modal error-order">
+            <a href="#" class="close-modal">
+                <span></span>
+                <span></span>
+            </a>
+            <div class="modal-content">
+                <h2 class="c-grey">Ваша заявка не была отправлена</h2>
+                <div class="neuron-line"></div>
+                <p>Произошла ошибка, проверьте все данные и повторите еще раз!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="wrap-modal"></div>
+        <div class="modal chose-us" id="chose-us">
+            <a href="#" class="close-modal">
+                <span></span>
+                <span></span>
+            </a>
+            <div class="modal-content">
+                <h2 class="c-light-green">Спасибо, что выбрали наш</h2>
+                <h2 class="c-light-green">профессионализм и креатив!</h2>
+                <div class="neuron-line"></div>
+                <p>В ближайшее время наш менеджер свяжется с Вами,
+                а пока можете посмотреть наши аккаунты в соцсетях</p>
+                <ul class="social flex-container vertical between">
+                    <li><a href="#" class="fb"></a></li>
+                    <li><a href="#" class="insta"></a></li>
+                    <li><a href="#" class="twitter"></a></li>
+                    <li><a href="#" class="youtube"></a></li>
+                    <li><a href="#" class="vk"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="wrap-modal"></div>
+        <div class="modal" id="discuss-poject">
+            <a href="#" class="close-modal">
+                <span></span>
+                <span></span>
+            </a>
+            <div class="modal-content">
+                <h2 class="c-light-green">Начать ваш проект</h2>
+                <div class="neuron-line"></div>
+                <form for="" id="feedback-form-discuss-project">
+                    <div class="input">
+                        <input type="text" name="begin-project-name" id="begin-project-name" placeholder="Ваше имя:">
+                        <span class="error-box"></span>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="begin-project-phone" id="begin-project-phone" placeholder="Ваш телефон:">
+                        <span class="error-box"></span>
+                    </div>
+                    <input type="file" name="tech-task" id="tech-task">
+                    <label for="tech-task">Приложить файл (ТЗ) не более 10 Мб</label>
+                    <button type="submit" class="btn btn-big btn-green c-white">Позвоните мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="wrap-modal"></div>
+        <div class="modal" id="consultation">
+            <a href="#" class="close-modal">
+                <span></span>
+                <span></span>
+            </a>
+            <div class="modal-content">
+                <h2 class="c-light-green">Консультация по телефону</h2>
+                <div class="neuron-line-red"></div>
+                <form for="" id="feedback-form-consultation">
+                    <div class="input">
+                        <input type="text" name="consultation-project-name" id="consultation-project-name" placeholder="Ваше имя:">
+                        <span class="error-box"></span>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="consultation-project-phone" id="consultation-project-phone" placeholder="Ваш телефон:">
+                        <span class="error-box"></span>
+                    </div>
+                    <input type="file" name="consultation-tech-task" id="consultation-tech-task">
+                    <label for="tech-task">Приложить файл (ТЗ) не более 10 Мб</label>
+                    <button type="submit" class="btn btn-big btn-green c-white">Позвоните мне</button>
+                </form>
+                <a href="#" class="brif">Заполнить бриф</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="wrap-modal"></div>
+        <div class="modal" id="i-want-site-form">
+            <a href="#" class="close-modal">
+                <span></span>
+                <span></span>
+            </a>
+            <div class="modal-content">
+                <h2 class="c-light-green">Хочу такой же сайт</h2>
+                <div class="neuron-line-red"></div>
+                <form for="" id="feedback-form-want-project">
+                    <div class="input">
+                        <input type="text" name="want-project-name" id="want-project-name" placeholder="Ваше имя:">
+                        <span class="error-box"></span>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="want-project-phone" id="want-project-phone" placeholder="Ваш телефон:">
+                        <span class="error-box"></span>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="want-project-link" id="want-project-link" placeholder="Хочу такой же(ссылка на сайт)">
+                        <span class="error-box"></span>
+                    </div>
+                    <button type="submit" class="btn btn-big btn-green c-white">Хочу такой сайт</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>

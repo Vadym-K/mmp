@@ -1,0 +1,254 @@
+.overlay{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: transparent;
+	z-index: -1;
+	transition: all .2s linear;
+	&.active{
+		z-index: 99;
+		background-color: rgba(0,0,0,.8);
+	}
+	@media(max-width: 991px){
+		overflow-y: scroll;
+	}
+}
+.wrap-modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+}
+.modal{
+	width: 510px;
+	position: absolute;
+	top: 75px;
+	left: 50%;
+	transform: translateX(-50%) translateY(0%);
+	padding: 10px;
+	border-radius: 25px;
+	border: 1px solid #73edda;
+	display: none;
+	z-index: -1;
+	@media(max-width: 599px){
+		width: 100%;
+	}
+	&.open{
+		display: block;
+		top: 75px;
+		left: 50%;
+		transition: top .2s linear;
+		z-index: 200;
+		animation: modal 1s linear;
+	}
+}
+@keyframes modal{
+	0%{
+		transform: translateY(200%) translateX(-50%) scale(0.5); 
+	}
+	80%{
+		transform: translateY(20%) translateX(-50%) scale(0.5); 
+	}
+	100%{
+		transform: translateY(0%) translateX(-50%) scale(1); 
+	}
+}
+.close-modal{
+	position: absolute;
+	top: 0;
+	right: -75px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	width: 39px;
+	height: 39px;
+	@media(max-width: 767px){
+		right: 0;
+		top: -75px;
+	}
+	span{
+		position: absolute;
+		width: 20px;
+		height: 2px;
+		background-color: #fff;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+		& + span{
+			transform: translateY(-50%) translateX(-50%) rotate(45deg);
+		}
+	}
+}
+.modal-content{
+	text-align: center;
+	background-color: #fff;
+	padding: 20px 0 40px;
+	border-radius: 25px;
+	color: #808080;
+	h2{
+		font-weight: bold;
+	}
+	.neuron-line{
+		margin: 0px auto 14px;
+	}
+	.warning{
+		font-size: 26px;
+		font-family: $cuprumreg;
+		font-weight: bold;
+		color: #e31e24;
+		margin-top: -20px;
+		margin-bottom: 15px;
+		span{
+			display: block;
+			font-size: 30px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+	}
+	p{
+		font-size: 22px;
+		font-family: $cuprumreg;
+	}
+	span{
+		display: block;
+		font-size: 27px;
+		font-family: $cuprumreg;
+		font-weight: bold;
+		margin-top: 16px;
+	}
+	img{
+		margin: 25px 0;
+	}
+	form{
+		padding: 0 20px;
+		@media(max-width: 991px){
+			display: block;
+		}
+		.input{
+			display: inline-block;
+			width: 100%;
+			.error-box{
+				top: -32px;
+				width: 100%;
+			}
+		}
+		input,
+		button{
+			width: 100%;
+			margin: 0;
+			margin-bottom: 25px;
+		}
+		input{
+			border-color: #e6e6e6;
+		}
+		input[type=file]{
+			& + label{
+				width: 100%;
+				margin-bottom: 25px;
+				@media(max-width: 419px){
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.brif{
+		color: #e62027;
+		&::before{
+			background: url('../img/brif-red-before.png') no-repeat;
+		}
+	}
+	.social{
+		margin: 20px 0;
+		@media(max-width: 599px){
+			justify-content: space-between;
+			flex-wrap: wrap;
+			padding: 0 15px;
+		}
+		li{
+			display: inline-block;
+			margin: 0 17px;
+			@media(max-width: 599px){
+				margin: 0;
+				@media(max-width: 479px){
+					width: 33.3333%;
+					margin-bottom: 30px;
+				}
+			}
+			a{
+				width: 61px;
+				height: 50px;
+				background: url('../img/sprite-social-modal.png') no-repeat;
+				background-position-y: 0;
+				transition: background-position-y .2s linear;
+				&:hover{
+					background-position-y: -50px;
+				}
+				&.fb{
+					background-position-x: 0;
+				}
+				&.insta{
+					background-position-x: -61px;
+				}
+				&.twitter{
+					background-position-x: -122px;
+				}
+				&.youtube{
+					background-position-x: -183px;
+				}
+				&.vk{
+					background-position-x: -244px;
+				}
+			}
+		}
+	}
+	.name-file{
+		font-size: 18px;
+		position: absolute;
+		bottom: -37px;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 200px;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+}
+#i-want-site-form{
+	.input{
+		input{
+			margin-bottom: 20px;
+		}
+	}
+	.btn{
+		font-size: 22px;
+	}
+	.brif{
+		font-size: 20px;
+	}
+}
+#chose-us{
+	.modal-content{
+		padding-bottom: 30px;
+	}
+	.social{
+		margin: 20px 0 0 0;
+	}
+}
+.bonus{
+	.modal-content{
+		padding-bottom: 25px;
+	}
+}
+.get-order{
+	.social{
+		margin: 30px 0;
+		@media(max-width: 479px){
+			margin-bottom: 0;
+		}
+	}
+	.neuron-line{
+		margin-bottom: 27px;
+	}
+}

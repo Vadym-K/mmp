@@ -1,0 +1,173 @@
+#menu{
+    @media(max-width: 991px){
+        display: none;
+    }
+}
+.mobile-menu-top{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #a5dcd4;
+    @media(max-width: 991px){
+        display: flex;
+    }
+    .brif{
+        display: none;
+        @media(max-width: 599px){
+            display: block;
+        }
+        &::before{
+            background: url('../img/brif-white-before.png') no-repeat;
+        }
+    }
+    .lang{
+        display: block;
+        @media(max-width: 599px){
+            display: none;
+        }
+        a{
+            &::before{
+                border-top-color: #fff;
+            }
+        }
+        .lang-list{
+            a{
+                color: #4c4c4c;
+            }
+        }
+    }
+    .btn{
+        display: block;
+        color: #fff;
+        border-color: #fff;
+        @media(max-width: 599px){
+            display: none;
+        }
+    }
+    .contact{
+        @media(max-width: 599px){
+            display: none;
+        }
+        .mail{
+            border-color: #fff;
+        }
+    }
+    .close-menu-btn{
+        width: 45px;
+        height: 45px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        position: relative;
+        display: inline-block;
+        span{
+            width: 20px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+            & + span{
+                transform: translateX(-50%) translateY(-50%) rotate(45deg);
+            }
+        }
+    }
+}
+.slicknav_nav{
+    display: none;
+    @media(max-width: 991px){
+        display: block;
+    }
+}
+
+.slicknav_menu{
+    display: none;
+    order: 4;
+    @media(max-width: 991px){
+        display: block;
+    }
+}
+.slicknav_btn{
+    padding: 12px 8px;
+    border: 1px solid #4bb9a8;
+    border-radius: 7px;
+    display: block;
+}
+.slicknav_icon-bar{
+    width: 28px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #4bb9a8;
+    display: block;
+    & + .slicknav_icon-bar{
+        margin-top: 4px;
+    }
+}
+
+.slicknav_nav{
+    background: url('../img/mobile-menu-bg.jpg') no-repeat center center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    color: #fff;
+    padding: 30px 50px;
+    @media(max-width: 419px){
+        padding: 30px 20px;
+    }
+    & > a{
+        display: inline-flex;
+        width: 50%;
+        font-size: 20px;
+        font-family: $cuprumreg;
+        align-items: center;
+        margin-top: 40px;
+        float: left;
+        padding-left: 70px;
+        @media(max-width: 767px){
+            padding-left: 30px;
+            @media(max-width: 599px){
+                float: none;
+                padding-left: 50px;
+                width: 100%;
+                margin-top: 20px;
+                @media(max-width: 419px){
+                    padding-left: 0;
+                }
+            }
+        }
+        &::before{
+            content: "";
+            background: url('../img/sprite-nav.png') no-repeat center left;
+            width: 41px;
+            height: 39px;
+            margin-right: 20px;
+        }
+        &.sites::before{
+            background-position: -41px 0;
+        }
+        &.about-us::before{
+            background-position: -41px -39px;
+        }
+        &.advertising::before{
+            background-position: -41px -78px;
+        }
+        &.support::before{
+            background-position: -41px -117px;
+        }
+        &.contacts::before{
+            background-position: -41px -156px;
+        }
+        &.full{
+            display: inline-flex;
+            &::before{
+                background-position: -41px -195px;
+            }
+        }
+    }
+}
+

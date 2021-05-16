@@ -1,0 +1,53 @@
+.jq-selectbox{
+    border: 1px solid #4bb9a8;
+    border-radius: 25px;
+    height: 50px;
+    line-height: 45px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    &.opened{
+        border-radius: 25px 25px 0 0;
+    }
+}
+.jq-selectbox__select-text{
+    font-size: 18px;
+    font-family: $cuprumreg;
+    color: #808080;
+    padding: 0 40px 0 18px;
+}
+.jq-selectbox__trigger-arrow{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-25%);
+    border: 7px solid transparent;
+    border-top: 8px solid #ccc;
+}
+.jq-selectbox__dropdown{
+    background: #fff;
+    border: 1px solid #4bb9a8;
+    padding: 0 14px;
+    width: 490px !important;
+    margin-left: -1px;
+}
+.jq-selectbox li{
+    white-space: normal;
+    font-size: 18px;
+    color: #808080;
+    line-height: 1;
+    padding: 15px 0;
+    cursor: pointer;
+    & + li{
+        border-top: 1px solid #e5e5e5;
+    }
+}
+
+.jq-checkbox{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #4bb9a8;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+}

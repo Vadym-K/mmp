@@ -1,0 +1,163 @@
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    @media(max-width: 1023px){
+        padding: 0 26px;
+    }
+    @media(max-width: 991px){
+        padding: 0 50px;
+    }
+    @media(max-width: 419px){
+        padding: 0 15px;
+    }
+}
+.row{
+    @media(max-width: 991px){
+        margin: 0 -15px;
+    }
+}
+.flex-container{
+    display: flex;
+}
+.between{
+    justify-content: space-between;
+}
+.around{
+    justify-content: space-around;
+}
+.vertical{
+    align-items: center;
+}
+.direction{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.c-light-green,
+a.c-light-green{
+    color: #4bb9a8;
+}
+.c-white,
+a.c-white{
+    color: #fff;
+}
+.c-grey{
+    color: #838383;
+}
+
+.btn-wrap{
+    text-align: center;
+}
+.btn{
+    line-height: 45px;
+    display: inline-block;
+    border: 1px solid #4bb9a8;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-family: $regular;
+    transition: all .2s linear;
+    margin: 0 9px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    @media(max-width: 599px){
+        margin: 0;
+    }
+    & + .btn{
+        margin-top: 30px;
+    }
+    &:hover{
+        box-shadow: inset 1px 1px 5px rgba(0,0,0,.35);
+    }
+}
+.btn-small{
+    width: 190px;
+}
+.btn-big{
+    width: 319px;
+    @media(max-width: 419px){
+        width: 100%;
+    }
+}
+.btn-transparent{
+    background-color: transparent;
+    &:hover{
+        background-color: #4bb9a8;
+        color: #fff;
+        border-color: #4bb9a8;
+    }
+    &.white-border{
+        border-color: #fff;
+        &:hover{
+            border-color: #797979;
+        }
+    }
+}
+.btn-green{
+    background-color: #4bb9a8;
+    &:hover{
+        background-color: #359082;
+        border-color: #359082;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+h1{
+    font-family: $medium;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #b2b3b3;
+    line-height: 1; 
+}
+h2{
+    text-align: center;
+    font-family: $regular;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 60px;
+    @media(max-width: 767px){
+        line-height: 50px;
+        @media(max-width: 599px){
+            font-size: 36px;
+        }
+    }
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    color: #8c8c8c;
+    font-family: $regular;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 25px;
+    font-family: $cuprum;
+}
+.main-subtitle{
+    font-size: 33px;
+    text-transform: uppercase;
+    font-family: $cuprumreg;
+    line-height: 45px;
+}
+.subtitle{
+    font-size: 30px;
+    font-family: $cuprumreg;
+    text-align: center;
+    @media(max-width: 599px){
+        font-size: 22px;
+    }
+}
+
+.d-n-768{
+    @media(max-width: 991px){
+        display: none;
+    }
+}
+
+
